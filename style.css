@@ -49,6 +49,21 @@ body {
     transform: translateY(50px);
 }
 
+/* --- ЛОГОТИП --- */
+.logo {
+    width: 300px;              /* Размер логотипа */
+    height: 300px;
+    object-fit: contain;       /* Сохраняет пропорции */
+    margin-bottom: 1.5rem;     /* Отступ до заголовка */
+    filter: drop-shadow(0 4px 15px rgba(0,0,0,0.3)); /* Тень под логотипом */
+    transition: transform 0.3s ease;
+}
+
+/* Лёгкая анимация при наведении */
+.logo:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
 .hero-content h1 {
     font-size: 3rem;
     color: white;
