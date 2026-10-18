@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия маникюра</title>
     <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия маникюра и педикюра</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Главный экран с параллаксом -->
     <header class="hero" id="hero">
-        <!-- СЛОЙ 1: Маникюрный стол (Задний план) -->
+        
+        <!-- СЛОЙ 1: Фото стола (задний план) -->
         <div class="parallax-layer layer-1">
-            <!-- Замените на ваше фото стола -->
             <img src="img/hero/table.jpg" alt="Маникюрный стол">
         </div>
         
-        <!-- СЛОЙ 2: Руки мастера (Средний план) -->
+        <!-- СЛОЙ 2: Руки мастера (средний план) -->
         <div class="parallax-layer layer-2-hands">
-            <!-- Обязательно PNG с прозрачным фоном! -->
             <img src="img/hero/hands.png" alt="Руки мастера">
         </div>
 
-        <!-- СЛОЙ 3: Надписи и кнопки (Передний план) -->
+        <!-- СЛОЙ 3: Надписи и кнопки (передний план) -->
         <div class="parallax-layer layer-3-content hero-content">
-
-	    <img src="img/hero/logo.png" alt="Логотип студии" class="logo">
-
+            <img src="img/hero/logo.png" alt="Логотип студии" class="logo">
             <h1>Студия маникюра и педикюра</h1>
             <p class="subtitle">Красота до кончиков пальцев</p>
             
@@ -34,16 +39,22 @@
                 <a href="#pedicure" class="service-btn-v">Педикюр</a>
                 <a href="#design" class="service-btn-v">Дизайн</a>
                 <a href="#colors" class="service-btn-v">Цветовая палитра</a>
-		<a href="#aboutMe" class="service-btn-v">Обо мне</a>
                 <a href="#works" class="service-btn-v">Мои работы</a>
                 <a href="#booking" class="service-btn-v">Запись к мастеру</a>
             </nav>
         </div>
+
+        <!-- Плавный переход к тексту -->
+        <div class="hero-fade"></div>
     </header>
 
-    <section class="services" id="manicure">
-        <h2>Наши услуги</h2>
-        <p>Описание услуг...</p>
+    <!-- Текст после стола -->
+    <section class="content-text">
+        <div class="content-text-inner">
+            <h2>Добро пожаловать в нашу студию</h2>
+            <p>Здесь будет ваш текст о салоне, услугах, подходе к работе...</p>
+            <p>Мы создаём красоту с любовью и вниманием к каждой детали.</p>
+        </div>
     </section>
 
     <script src="js/script.js"></script>
